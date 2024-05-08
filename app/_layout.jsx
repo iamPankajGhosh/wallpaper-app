@@ -1,4 +1,3 @@
-import React from "react";
 import { Stack } from "expo-router";
 
 const Layout = () => {
@@ -6,6 +5,13 @@ const Layout = () => {
     <Stack>
       <Stack.Screen
         name="index"
+        options={{
+          headerShown: false,
+        }}
+      />
+
+      <Stack.Screen
+        name="home/index"
         options={{
           headerShown: false,
         }}
